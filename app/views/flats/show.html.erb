@@ -1,0 +1,14 @@
+<div class="banner navbar navbar-default">
+<div class="container-fluid">
+<p><%= link_to 'Simple Airbnb', flats_path %></p>
+<input type="text" value="Search">
+<p><button>Search</button> <%= link_to 'Add Flat', new_flat_path %></p>
+</div>
+</div>
+
+<h1><%= @flat.name %></h1>
+<p><%= @flat.address %></p>
+
+<h2>A bit more about this flat...</h2>
+<p><%= @flat.description %></p>
+<%= link_to 'Edit', edit_flat_path %>
